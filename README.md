@@ -64,3 +64,29 @@ df.head()
 41.72059	-87.70172	Evergreen Park	US	America/Chicago
 51.65	    -0.2	Barnet	GB	Europe/London
 ```
+
+### Plot Geo-Coordinates on the World Map
+```
+pip install geopandas
+
+```
+
+```
+import plotly.express as px
+import plotly.graph_objects as go
+import geopandas as gpd
+
+fig = go.Figure(data=go.Scattergeo(
+        lon = df[1],
+        lat = df [0],
+        text = df [3],
+        mode = 'markers',        
+        ))
+fig.update_layout(
+        title = 'Map',
+    )
+fig.show()
+```
+
+![image](https://user-images.githubusercontent.com/7940117/122821438-d8e39980-d2aa-11eb-8dbb-695b2d291647.png)
+
