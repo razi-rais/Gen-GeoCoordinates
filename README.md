@@ -1,5 +1,5 @@
 # Geo Coordinates Generator
-Python script to generate random geo-coordinates based on country codes based on [Faker](https://faker.readthedocs.io/en/master/fakerclass.html) library.
+Python script to generate random geo-coordinates based on country codes using [Faker](https://faker.readthedocs.io/en/master/fakerclass.html) library.
 
 ### Install Faker
 ```
